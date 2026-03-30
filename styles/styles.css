@@ -186,11 +186,63 @@ p{
 
 
 
+/*******************************SEE MORE******************************/
+.more-services{
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+}
 
 
+.more-services.active{
+  max-height: 500px; /* enough to fit content */
+  opacity: 1;
+  transform: translateY(0);
+}
 
+.see-more-btn {
+    display: block;
+    margin: 20px auto auto auto;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #0a53c2, #4dabf7);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(13, 110, 253, 0.3);
+}
 
+/* Hover effect */
+.see-more-btn:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 12px 25px rgba(13, 110, 253, 0.4);
+}
 
+/* Click effect */
+.see-more-btn:active {
+    transform: scale(0.97);
+}
+
+/* Optional glowing effect */
+.see-more-btn::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #0d6efd, #4dabf7);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.3s ease;
+}
+
+.see-more-btn:hover::after {
+    opacity: 0.2;
+}
 
 
 
