@@ -12,6 +12,60 @@ h2{
 p{
     font-family: var(--text-font);
 }
+/************NAV************************/
+
+/* Navbar container */
+.custom-navbar {
+    background: rgba(255, 255, 255, 0.95); 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    backdrop-filter: blur(8px); 
+}
+
+/* Brand */
+.custom-navbar .navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #0d6efd; 
+    letter-spacing: 0.5px;
+}
+
+
+.custom-navbar .nav-link {
+    font-weight: 500;
+    color: #333;
+    margin-left: 1rem;
+    transition: color 0.3s, transform 0.2s;
+}
+
+
+.custom-navbar .nav-link:hover {
+    color: #0d6efd; 
+    transform: translateY(-2px);
+}
+
+.custom-navbar .navbar-toggler {
+    border: none;
+}
+
+
+.custom-navbar.scrolled {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
